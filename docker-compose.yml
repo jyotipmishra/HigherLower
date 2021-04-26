@@ -1,0 +1,15 @@
+version: '3.9'
+services: 
+    high-low-sql:
+        image:  mcr.microsoft.com/mssql/server:2017-latest
+        environment:
+            SA_PASSWORD: "Str0ngPassw0rd+"
+            ACCEPT_EULA: "Y"
+        ports: 
+            - "1433:1433"
+    high-low-api:
+        build: .
+        ports:
+            - "5005:80"
+        depends_on: 
+            - high-low-sql
