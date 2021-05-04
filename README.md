@@ -1,5 +1,6 @@
 # HigherLower
-* API based game to guess a higher or lower card value. 
+* API based game to guess a higher or lower card value.
+* Clone https://github.com/jyotipmishra/HigherLower
 
 # Pre-requisites to run the application
   * Docker must be installed to easily run the APIs.
